@@ -1,0 +1,68 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #f5f7f5;
+    color: #1d1d1f;
+    line-height: 1.6;
+}
+.header {
+    background: #fff;
+    border-bottom: 1px solid #d7ded7;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.header-inner {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.header h1 { font-size: 20px; font-weight: 600; }
+.header span { font-size: 13px; color: #6b756b; }
+.nav { margin-left: auto; display: flex; gap: 16px; font-size: 14px; }
+.container { max-width: 740px; margin: 0 auto; padding: 40px 24px 80px; }
+.meta {
+    margin-bottom: 32px;
+    padding: 16px 20px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #d7ded7;
+}
+.meta p { font-size: 14px; color: #6b756b; margin: 0; }
+h2 { font-size: 22px; font-weight: 600; margin: 40px 0 16px; color: #14532d; }
+h3 { font-size: 17px; font-weight: 600; margin: 24px 0 12px; color: #1d1d1f; }
+p { margin-bottom: 12px; font-size: 15px; color: #424245; }
+ul, ol { margin: 0 0 16px 24px; }
+li { font-size: 15px; color: #424245; margin-bottom: 6px; }
+strong { color: #1d1d1f; }
+a { color: #16a34a; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.section {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #d7ded7;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+.section h2 { margin-top: 0; }
+.footer { text-align: center; padding: 40px 24px; font-size: 13px; color: #6b756b; }
+.footer a { color: #16a34a; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+th, td { text-align: left; padding: 8px 12px; font-size: 14px; border-bottom: 1px solid #e6ebe6; }
+th { color: #6b756b; font-weight: 500; }
+.mark {
+    display: inline-block;
+    width: 28px; height: 28px;
+    border-radius: 7px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 700;
+    font-size: 15px;
+}
