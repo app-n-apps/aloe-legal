@@ -49,8 +49,8 @@
     <h2>What we do collect</h2>
     <p>We collect usage events and diagnostics to understand whether the app works: screens opened,
        scan progress and summary counts, actions taken in the app, purchase events and crash
-       reports. These records may be linked through app user and device identifiers. We also use
-       Microsoft Clarity to record sessions and interactions with the app interface. Depending
+       reports. These records may be linked through app user and device identifiers. Versions before
+       1.0.3 may use Microsoft Clarity to record sessions and interactions with the app interface. Depending
        on the app version and masking applied, session recordings may include visible photo
        previews. Photo analysis itself remains on your device.</p>
     <p>The app does not require registration with a name, email address or phone number. If you
@@ -58,17 +58,17 @@
 
     <h3>Services used by the app</h3>
     <p>The services used may vary by app version. Versions before 1.0.3 include AppsFlyer;
-       version 1.0.3 does not include that SDK.</p>
+       version 1.0.3 does not include that SDK and does not initialize Clarity session recording.</p>
     <table>
       <tr><th>Service</th><th>What it receives</th></tr>
       <tr><td>Google Firebase (Analytics, Crashlytics, Remote Config)</td><td>Usage events, crash reports, user and installation identifiers, device information and feature configuration</td></tr>
       <tr><td>Amplitude</td><td>Usage events, user and device identifiers, device information and approximate location derived from IP address</td></tr>
-      <tr><td>Microsoft Clarity</td><td>Session recordings, interaction events, app screens and a custom user identifier</td></tr>
+      <tr><td>Microsoft Clarity (versions before 1.0.3)</td><td>Session recordings, interaction events, app screens and a custom user identifier</td></tr>
       <tr><td>AppsFlyer</td><td>Install attribution, usage events, user and device identifiers and device information</td></tr>
       <tr><td>Apphud</td><td>Subscription status, purchase-related information and an app user identifier</td></tr>
     </table>
     <p>Apphud supplies an app user identifier that the app also passes to Firebase Analytics,
-       Crashlytics, Amplitude and Microsoft Clarity, and to AppsFlyer in versions before 1.0.3.
+       Crashlytics and Amplitude, and to AppsFlyer and Microsoft Clarity in versions before 1.0.3.
        These services may use their own
        device or installation identifiers. The identifiers are pseudonymous: they can link
        records from your use of the app and do not make those records anonymous. Reinstalling
